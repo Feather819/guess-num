@@ -1,7 +1,12 @@
 import random
 
-r = random.randint(1, 100)
+start = input('請決定數字範圍的開始值：')
+start = int(start)
+end = input('請決定數字範圍的結束值：')
+end = int(end)
+r = random.randint(start, end)
 count = 0
+
 while True:
 	num = input('請猜數字：')
 	num = int(num)
